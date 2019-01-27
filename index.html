@@ -1,195 +1,118 @@
 
-
 <!DOCTYPE HTML>
-	<head>
+    <head>
+    <meta charset="utf-8">
 
-		<meta charset="utf-8">
+    <title>Personal Health Assistant - Proto.io player</title>
 
-		<title>Personal Health Assistant - Proto.io</title>
+    
+
+			<link type="text/css" rel="stylesheet" href="./stylesheets/preview-export-min.css">
+			<script type="text/javascript" src="./scripts/preview-export-min.js"></script>
 
 		
-			<meta name="HandheldFriendly" content="True">
-			<meta name="MobileOptimized" content="720"> 
 
-			
-			
-			<meta name="viewport" content="minimum-scale=0.50, maximum-scale=0.50, initial-scale=0.50, user-scalable=no, target-densitydpi=device-dpi, shrink-to-fit=no, viewport-fit=cover" />
+    <script type="text/javascript">
+        var prx = window.prx || {};
+        prx.orientation = 'portrait';
+        prx.orientations = {};
+        prx.orientations.portrait = 1;
+        prx.orientations.landscape = 1;
+        prx.project = {};
+        prx.project.id = '4c4e0595-0f69-49be-a247-898f07936555';
+        prx.project.title = 'Personal Health Assistant';
+        prx.project.version = 0;
+        prx.project.livepreview = 0;
+        prx.project.account = "aswinav";
+        prx.activePage = {};
+        prx.usercountry = "us";
+        
+            prx.user = false;
+        
+        prx.skin = 'android-phone-android1-2';
+        prx.ver = '6.5.4.2';
+        //prx.flashactions = 1;
+		prx.flashactions = 1; //we are not using the DB value anymore
 
-			
+        prx.nodejsassetsserver = {};
+        prx.nodejsassetsserver.host = ".proto.io";
+        prx.nodejsassetsserver.subdomainprefix = "https://at";
+        prx.nodejsassetsserver.maxsubdomains = "20";
+        prx.account = "aswinav";
+        prx.browserShowScreenshots = 'true';
+        prx.url.crossmsg = 'https://aswinav.proto.io';
+        prx.playerUrl = 'https://aswinav.proto.io/player/';
+        prx.spaces = false;
+        prx.csrf_token = '170B50B8AC4965E40C85410939ACC0E8F686E28945AFB22526D04A266FD682CC';
 
-			<meta name="format-detection" content="telephone=no">
+        
+    </script>
+
+    
+
+</head>
 
 
-			
-				<meta name="mobile-web-app-capable" content="yes">
-				
-				<link rel="icon" sizes="192x192" href="./assets/branding/android-icon-hires.png">
-				<link rel="icon" sizes="128x128" href="android-icon.png">
-			
+<body style="background-color:#FFFFFF">
 
-			<link rel="shortcut icon" href="apple-touch-icon.png">
+    
 
-			
-
-			<meta http-equiv="cleartype" content="on"> 
-
-
-			
-				<link rel="stylesheet" href="./stylesheets/player-export.css" />
-				<script type="text/javascript" src="./scripts/player-export.js"></script>
-			
-
-			
-			<script type="text/javascript" src="./libraries/common/components.js"></script> 
-			<link type="text/css" rel="Stylesheet" href="./libraries/common/components.2.00.css" /> 
-
-			
-					<script type="text/javascript" src="./libraries/material/components.js"></script> 
-					<link type="text/css" rel="Stylesheet" href="./libraries/material/components.2.00.css" /> 
-				
-				<script type="text/javascript" src="./data/data.js"></script> 
-			<script type="text/javascript" src="./webkitmask/maskimages.js"></script> 
-
-		<style>
-			body { width: 720px; height: 1080px; }
-			.landscape, .landscape .prx-page { min-height: 720px; }
-			.portrait, .portrait .prx-page { min-height: 1080px; }
-		</style>
-
-		<script type="text/javascript">
-
-			prx.ver = '6.5.4.2';
-			prx.url.account = 'https://aswinav.proto.io';
-			prx.url.staticassets = 'https://gal.proto.io';
-			prx.url.devices = 'https://dteyv52hbg2at.cloudfront.net/devices';
-			prx.url.static = 'https://dteyv52hbg2at.cloudfront.net';
-			prx.url.siteurl = 'proto.io';
-			prx.url.crossmsg = 'https://aswinav.proto.io';
-
-			prx.nodejsassetsserver = {};
-			prx.nodejsassetsserver.host = ".proto.io";
-			prx.nodejsassetsserver.subdomainprefix = "https://at";
-			prx.nodejsassetsserver.maxsubdomains = "20";
-
-			prx.device_library = 'material';
-			prx.devices[prx.device] = {
-				name: prx.device
-				,defaultOrientation: 'portrait'
-				,portrait_applies: 1 //new
-				,portrait: [720,1080]
-				,landscape_applies: 1 //new
-				,landscape: [1080,720]
-				,allow_orientation_change: 1 //new
-				,statusbar_skin: 'default' // new
-				,statusbarheightportrait: 0
-				,statusbarheightlandscape: 0
-				,navigationbar_skin: 'default' //new
-				,navigationbarheightportrait: 0
-				,navigationbarheightlandscape: 0
-				,normalportrait: [720,1080]
-				,normallandscape: [1080,720]
-				,device_s3bucket: '9b4a27c6-3353-4041-ba6c-22ff75c393d4'
-				,dpr: '2.00'
-				,deviceType: "default"
-				,showiPhoneXNotch: false
-				,appleWatchRoundedCorners: false
-				,scrollType: "default"
-				,initialscale: 0.50
-				,targetdensitydpi: "device-dpi"
-			}
-
-			prx.projectsettings.id = '4c4e0595-0f69-49be-a247-898f07936555';
-			prx.projectsettings.s3b = 'aswinav-787278-proto';
-			prx.projectsettings.account = 'aswinav';
-			prx.projectsettings.statusbar = '0'; 
-			prx.projectsettings.statusbarapplies = '0';
-			prx.projectsettings.navigationbar = '0';
-			prx.projectsettings.navigationbarapplies = '0';
-			prx.projectsettings.initialpageid = -1;
-			
-			
-			prx.projectsettings.flashactions = 1;
-			prx.projectsettings.gatrackingcode = '';
-
-			prx.export2html = '1' == true;
-			prx.mobPlayer = 0;
-
-			prx.user.country = 'US';
-
-			prx.s3Links = []; 
-			var sLinkedAssets = [];
-			
-
-			prx.csrf_token = '7A9050F6B235AD7D945D92F09C10ECAFE79DF3C8A71EDCB4935EC47F4CFF7F49';
+    <div class="page-sidebar">
+        
+        <div class="sidebar-action-buttons">
 
             
+                <span class="header-action-button player-icon-reload embed-icon-reload" id="refresh-preview">
+                    <span class="tooltip">Refresh preview</span>
+                </span>
+                
+                    <span  class="header-action-button player-icon-rotate embed-icon-rotate" id="change-orientation">
+                        <span class="tooltip">Change orientation</span>
+                    </span>
+                
 
-            
-                            prx.assetsAccessToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkIjp7InVpZCI6Ii0xIiwicHJvamVjdF9pZCI6IjRjNGUwNTk1LTBmNjktNDliZS1hMjQ3LTg5OGYwNzkzNjU1NSJ9LCJ2IjowLCJleHAiOjE1NDg3ODk3MTEsImlhdCI6MTU0ODYwOTcxMX0.O59Oaw-uKfU43GRqVs0zuLSKwuhA69J78qy3C4nqH40";
+        </div>
 
-			prx.iniPlayer.iniPreLoad();
+    </div>
 
+    <div id="maincontent" class="portrait">
 
-			 
-			
+        <div id="shortcut-pressed-outer">
+            <div id="shortcut-pressed"></div>
+        </div>
+        
 
-		</script>
-	</head>
-
-	
-
-			<body class="player device-cursor-touch mobile-device-true " " id="mbd" >
-
+			<div class="frame_generic">
 				
-				<div id="window-wrapper">
-					<div id="dragarea"></div>
-					<div id="statusbar"></div>
-					<div id="underlay" style=""></div>
+				<div class="body_generic skin_android-phone-android1-2 skin-wrapper skin-os-android skin-device-phone skin-model-android1 skin-size-2 skin-color-white skin-orientation-portrait">
 
-					<div class="prx-page" data-role="page" id="p-1" data-id="1"></div>
-					
-								<div class="prx-page" data-role="page" id="p-2" data-id="2"></div>
-							
-								<div class="prx-page" data-role="page" id="p-3" data-id="3"></div>
-							
-								<div class="prx-page" data-role="page" id="p-4" data-id="4"></div>
-							
-								<div class="prx-page" data-role="page" id="p-5" data-id="5"></div>
-							
-								<div class="prx-page" data-role="page" id="p-6" data-id="6"></div>
-							
-								<div class="prx-page" data-role="page" id="p-7" data-id="7"></div>
-							
-								<div class="prx-page" data-role="page" id="p-8" data-id="8"></div>
-							
-								<div class="prx-page" data-role="page" id="p-10" data-id="10"></div>
-							
-								<div class="prx-page" data-role="page" id="p-11" data-id="11"></div>
-							
-								<div class="prx-page" data-role="page" id="p-12" data-id="12"></div>
-							
-								<div class="prx-page" data-role="page" id="p-13" data-id="13"></div>
-							
-								<div class="prx-page" data-role="page" id="p-14" data-id="14"></div>
-							
-					<div id="navigationbar"></div>
-					<div id="overlay"></div>
-					<div id="trash"></div>
-					<div id="quick-audios"></div>
+					<div class="buttons top"></div>
+					<div class="detail-top"></div>
+					<div class="web-search"></div>
+					<div class="buttons left"></div>
+
+					<div class="body_generic_inner">
+						
+						<iframe id="pio-playerframe" src="new.html" scrolling="NO" style="width: 720px; height: 1080px;" webkitAllowFullScreen mozallowfullscreen allowFullScreen allowvr allow="autoplay"></iframe>
+					</div>
+
+					<div class="buttons right"></div>
+					<div class="detail-bottom"></div>
 				</div>
-
-				 
-			<div id="loader-wrapper">
 				
-				<div class="progress">
-					<div class="progress-bar"></div>
-				</div>
-				<div id="poweredby"></div>
 			</div>
-			
-
-
-			</body>
 		
+    </div>
 
+    
+
+    
+            <div id="branding"></div>
+        
+</body>
+
+
+<script type="text/javascript">
+    
+</script>
 </html>
